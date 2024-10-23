@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OldsAuto</title>
+    <style>body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: rgb(65, 36, 17);
+    }
+    
+    header {
+        background-color: rgb(134, 204, 200);
+        color: black;
+        padding: 1rem;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    nav ul li a {
+        color: rgb(2, 2, 12);
+        text-decoration: wavy;
+        font-weight: bold;
+    }
+    
+    .hero {
+        background-image: url('old-timer-vintage-cars-classic.webp');
+        background-size: cover;
+        background-position: center;
+        color: #ff0c0c;
+        padding: 6rem 2rem;
+        text-align: center;
+        position: relative;
+    }
+    
+    .hero::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+    .cta-button {
+        background-color: #ff6b35;
+        color: #fff;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+    
+    .cta-button:hover {
+        background-color: #e85a2d;
+    }
+    
+    .car-models {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .car-card {
+        background: #f4f4f4;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .car-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        background-color: #1a5f7a;
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+    }</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to OldsAuto</h1>
+                <p>Driving your most lovely old super cars</p>
+                <a href="#models" class="cta-button">Explore our models</a>
+            </div>
+        </section>
+        <section id="models">
+            <h2>Our Car Models</h2>
+            <div class="car-models">
+                <div class="car-card">
+                    <img src="https://imgs.search.brave.com/yPtvYlIURQGTht940RJ-TN-1heFyChx-70bzs94Q0kI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zMS5j/ZG4uYXV0b2V2b2x1/dGlvbi5jb20vaW1h/Z2VzL21vZGVscy9Q/T1JTQ0hFXzkxMS1D/YXJyZXJhLVMtMjAx/OV9tYWluLmpwZw" alt="Olds Hatchback">
+                    <h3>Olds Horse</h3>
+                    <p>Compact and fuel-efficient hatchback</p>
+                </div>
+                <div class="car-card">
+                    <img src="https://imgs.search.brave.com/u81HNHka8mW3-CT0dxF1vWs8-PJyHZQ3vmHakH4yepI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmlzc2FuLWdsb2Jh/bC5jb20vRU4vSEVS/SVRBR0VfQ09MTEVD/VElPTi9pbWcvbW9k/ZWxEZXRhaWwvMzQy/L2ltYWdlMDEuanBn" alt="Olds Sedan">
+                    <h3>Olds Cruise</h3>
+                    <p>Comfortable, stylish, fast, and speechless sedan</p>
+                </div>
+                <div class="car-card">
+                    <img src="https://imgs.search.brave.com/JLV1ZzfXz3xZ1Vt9Ehc9QvEwO13Ug3UVpLvBRiKOkx8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2F1dG93ZWVr/L2Fzc2V0cy8xOTk4/MDAxXzE5OTRfU3Vw/cmFfVHVyYm8uanBn/P3Jlc2l6ZT05ODA6/Kg" alt="Olds SUV">
+                    <h3>Olds Terrain</h3>
+                    <p>Power se bharpur and 2 cute eyes</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About OldsAuto</h2>
+            <p>At Old Auto, founded by om rohilla in 2015, we bring you the finest collection of classic, high-powered cars that stand the test of time. Our cars are not just vehicles; they are a legacy of craftsmanship, performance, and timeless beauty. Whether you're a collector or a lover of vintage automobiles, Old Auto offers the best in style and raw power. Discover cars that combine iconic design with robust engines, a tribute to the golden era of automotive excellence.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Visit your nearest OldsAuto dealership or contact us for more information:</p>
+            <p>Email: indian@oldauto.drive</p>
+            <p>Phone: (+91) 1245789360</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 OldsAuto. All rights reserved</p>
+    </footer>
+</body>
+</html>
